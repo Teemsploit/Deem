@@ -8,7 +8,7 @@ function libary:CreateWindow()
 	local Title = Instance.new("TextLabel")
 	local Close = Instance.new("TextButton")
 	
-	DeemUI.Name = math.random(1, 999999999)
+	DeemUI.Name = "DeemUI"
 	DeemUI.Parent = game.CoreGui
 	DeemUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	
@@ -127,3 +127,4 @@ TextButton.Text = text
 end
 return DeemLib
 end
+return libary
