@@ -8,11 +8,11 @@ function libary:CreateWindow()
 	local Title = Instance.new("TextLabel")
 	local Close = Instance.new("TextButton")
 	
-	DeemUI.Name = "DeemUI"
+	DeemUI.Name = math.random(1, math.max)
 	DeemUI.Parent = game.CoreGui
 	DeemUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	
-	TopMain.Name = math.random(1, 99999999)
+	TopMain.Name = math.random(1, math.max)
 	TopMain.Parent = DeemUI
 	TopMain.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 	TopMain.BorderColor3 = Color3.fromRGB(27, 53, 27)
@@ -20,14 +20,14 @@ function libary:CreateWindow()
 	TopMain.Position = UDim2.new(0.377266705, 0, 0.40765956, 0)
 	TopMain.Size = UDim2.new(0, 596, 0, 30)
 	
-	Main.Name = math.random(1, 99999999)
+	Main.Name = math.random(1, math.max)
 	Main.Parent = TopMain
 	Main.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
 	Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
 	Main.BorderSizePixel = 0
 	Main.Position = UDim2.new(0, 0, 1, 0)
 	Main.Size = UDim2.new(0, 596, 0, 353)
-	Grid.Name = math.random(1, 99999999)
+	Grid.Name = math.random(1, math.max)
 Grid.Parent = Main
 Grid.SortOrder = Enum.SortOrder.LayoutOrder
 Grid.CellSize = UDim2.new(0, 150, 0, 27)
@@ -44,7 +44,7 @@ Title.Text = "Deem b0.1"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 20.000
 
-Close.Name = math.random(1, 99999999)
+Close.Name = math.random(1, math.max)
 Close.Parent = TopMain
 Close.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 Close.BorderSizePixel = 0
@@ -127,4 +127,3 @@ TextButton.Text = text
 end
 return DeemLib
 end
-return libary
