@@ -8,7 +8,7 @@ function libary:CreateWindow()
 	local Title = Instance.new("TextLabel")
 	local Close = Instance.new("TextButton")
 	
-	DeemUI.Name = "DeemUI"
+	DeemUI.Name = math.random(1, 999999999)
 	DeemUI.Parent = game.CoreGui
 	DeemUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	
@@ -30,7 +30,7 @@ function libary:CreateWindow()
 	Grid.Name = math.random(1, 99999999)
 Grid.Parent = Main
 Grid.SortOrder = Enum.SortOrder.LayoutOrder
-Grid.CellSize = UDim2.new(0, 150, 0, 27)
+Grid.CellSize = UDim2.new(0, 111, 0, 24)
 
 Title.Name = " Title"
 Title.Parent = TopMain
@@ -111,12 +111,14 @@ coroutine.wrap(CloseButton)()
 
 local DeemLib ={}
 
-function DeemLib:CreateButton(text)
+function DeemLib:CreateButton(text, callback)
+
+	local callback = callback or function() end
 
 local TextButton = Instance.new("TextButton")
 
 TextButton.Parent = Main
-TextButton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.375965893, 0, 0.493121713, 0)
 TextButton.Size = UDim2.new(0, 146, 0, 20)
@@ -127,4 +129,3 @@ TextButton.Text = text
 end
 return DeemLib
 end
-return libary
